@@ -3,6 +3,7 @@ import pandas as pd
 from pybfe.client.session import GRPCSession as Session
 import os
 
+os.environ['BFE_SSL_CERT'] = './cert/insecure-server.crt'
 try:
     from dotenv import load_dotenv
     from pathlib import Path
